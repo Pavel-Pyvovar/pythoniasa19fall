@@ -1,94 +1,21 @@
-"""
-Assignment 1-A
-==============
+chars = ['malt', 'rat', 'cat',
+         'dog', 'cow with the crumpled horn',
+         'maiden all forlorn',
+         'priest all shaven and shorn',
+         "cock that crow'd in the morn",
+         'farmer sowing his corn']
 
-Write fuction that generates the text below; use at least variables and f-strings.
-For those who are already familiar with Python – write the best code you can to conform to the Zen of Python.
+actions = ['Jack built,', 'lay in the house that Jack built.',
+           'ate the malt,', "kill'd the rat,", 'worried the cat,',
+           "tossed the dog,", "milk'd the cow with the crumpled horn,",
+           "kissed the maiden all forlorn,",
+            "married the man all tatter'd and torn,",
+           "waked the priest all shaven and shorn,",
+           "kept the cock that crow'd in the morn,"]
 
->>> print(poem())
-This is the house that Jack built.
----
-This is the malt
-That lay in the house that Jack built.
----
-This is the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cock that crowed in the morn,
-That waked the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the farmer sowing his corn,
-That kept the cock that crowed in the morn,
-That waked the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
-<BLANKLINE>
-"""
-
-def poem():
-    return ''
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+print("This is the house that Jack built.\n")
+for i, char in enumerate(chars, 1):
+    print(f'This is the {char},')
+    for action in reversed(actions[1:i+1]):    
+        print(f"That {action}")
+    print()
