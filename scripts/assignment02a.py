@@ -2,6 +2,8 @@
 Assignment 2-A
 ==============
 
+merge assignment01 and assignment02
+
 Wrap Assignment 1-A in function `poem()` that satisfies the doctest:
 
 >>> from pathlib import Path
