@@ -81,6 +81,10 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
+# Python trash
+tempCodeRunnerFile.py
+__pycache__
+
 # Environments
 .env
 .venv
