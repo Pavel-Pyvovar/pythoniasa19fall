@@ -1,5 +1,3 @@
-print(task30('ABd1234@1'))
-print(task30('a F1#,2w3E*'))
-print(task30('2We3345'))
-print(task30('2We3345'))
-print(task30('вафва'))
+if __name__ == '__main__':
+#     import doctest
+#     doctest.testmod()
