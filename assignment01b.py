@@ -1,9 +1,7 @@
 """
 Assignment 1-B (optional)
 =========================
-
 This assignment is similar to 1-A except that the poem is in Russian now.
-
 >>> print(poem())
 Вот дом, который построил Джек.
 ---
@@ -71,8 +69,3 @@ This assignment is similar to 1-A except that the poem is in Russian now.
 
 def poem():
     return ''
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
